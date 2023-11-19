@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
@@ -25,7 +26,6 @@ class LoginViewController: UIViewController {
     
     private lazy var googleLoginButton = {
         let button = GIDSignInButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.colorScheme = .light
         button.style = .standard
         button.addTarget(self, action: #selector(handleGoogleLogin), for: .touchUpInside)
@@ -41,11 +41,9 @@ class LoginViewController: UIViewController {
     
     private func setupLayout() {
         view.addSubview(googleLoginButton)
-        
-        NSLayoutConstraint.activate([
-            googleLoginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            googleLoginButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        googleLoginButton.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
     }
     
     @objc func handleGoogleLogin() {

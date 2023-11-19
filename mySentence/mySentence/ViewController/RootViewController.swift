@@ -33,7 +33,7 @@ extension RootViewController: UserManagerDelegate {
         if userManager.user == nil {
             navigationController?.pushViewController(LoginViewController(userManager: userManager), animated: false)
         } else {
-            navigationController?.pushViewController(HomeViewController(userManager: userManager), animated: false)
+            navigationController?.pushViewController(MainTabBarController(userManager: userManager), animated: false)
         }
     }
 }

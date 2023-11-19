@@ -1,14 +1,15 @@
 //
-//  HomeViewController.swift
+//  SettingViewController.swift
 //  mySentence
 //
 //  Created by 이지현 on 2023/11/18.
 //
 
 import UIKit
+import SnapKit
 
-class HomeViewController: UIViewController {
-    
+class SettingViewController: UIViewController {
+
     let userManager: UserManager
     
     init(userManager: UserManager) {
@@ -22,7 +23,6 @@ class HomeViewController: UIViewController {
     
     private lazy var logoutButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.configuration = .filled()
         button.configuration?.title = "Logout"
         button.addTarget(self, action: #selector(logoutButtonPressed), for: .touchUpInside)
@@ -38,17 +38,13 @@ class HomeViewController: UIViewController {
     
     private func setupLayout() {
         view.addSubview(logoutButton)
-        
-        NSLayoutConstraint.activate([
-            logoutButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoutButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+        logoutButton.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
     }
     
     @objc private func logoutButtonPressed() {
         userManager.logoutUser()
     }
-    
-
 
 }
