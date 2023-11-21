@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A64FD07E2B0D2240003977A5 /* YES24MyoungjoR.otf in Resources */ = {isa = PBXBuildFile; fileRef = A64FD07C2B0D215C003977A5 /* YES24MyoungjoR.otf */; };
+		A64FD07F2B0D2242003977A5 /* YES24MyoungjoB.otf in Resources */ = {isa = PBXBuildFile; fileRef = A64FD07B2B0D215C003977A5 /* YES24MyoungjoB.otf */; };
 		A66E4A9E2B07C6240042B486 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4A9D2B07C6240042B486 /* UserManager.swift */; };
 		A66E4ADC2B086CBA0042B486 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A66E4ADB2B086CBA0042B486 /* FirebaseAuth */; };
 		A66E4AE02B087B390042B486 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4ADF2B087B390042B486 /* MainTabBarController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A64FD07B2B0D215C003977A5 /* YES24MyoungjoB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = YES24MyoungjoB.otf; sourceTree = "<group>"; };
+		A64FD07C2B0D215C003977A5 /* YES24MyoungjoR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = YES24MyoungjoR.otf; sourceTree = "<group>"; };
 		A66E4A9D2B07C6240042B486 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A66E4ADF2B087B390042B486 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A66E4AE12B087C710042B486 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A64FD07D2B0D2163003977A5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A64FD07B2B0D215C003977A5 /* YES24MyoungjoB.otf */,
+				A64FD07C2B0D215C003977A5 /* YES24MyoungjoR.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		A66E4AA12B07D4A30042B486 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 		A6D93A6E2B06694700FF0536 /* mySentence */ = {
 			isa = PBXGroup;
 			children = (
+				A64FD07D2B0D2163003977A5 /* Font */,
 				A66E4AA12B07D4A30042B486 /* ViewController */,
 				A6D93AB52B07C5B600FF0536 /* Service */,
 				A6D93AB02B07C13300FF0536 /* Model */,
@@ -203,8 +217,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64FD07F2B0D2242003977A5 /* YES24MyoungjoB.otf in Resources */,
 				A6D93A7C2B06694900FF0536 /* LaunchScreen.storyboard in Resources */,
 				A6D93A792B06694900FF0536 /* Assets.xcassets in Resources */,
+				A64FD07E2B0D2240003977A5 /* YES24MyoungjoR.otf in Resources */,
 				A6D93AAB2B079A6B00FF0536 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

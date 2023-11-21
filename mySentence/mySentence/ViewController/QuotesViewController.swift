@@ -31,7 +31,7 @@ class QuotesViewController: UIViewController {
         let label = UILabel()
         label.text = "기록된 문장이 없습니다"
         label.textColor = .tertiaryLabel
-        label.font = .systemFont(ofSize: 16, weight: .semibold)
+        label.font = UIFont(name: "YESMyoungjo-Regular", size: 18)
         
         view.addSubview(label)
         label.snp.makeConstraints { make in
@@ -124,7 +124,6 @@ class QuotesViewController: UIViewController {
                           fatalError("Unable to initialize type \(Quote.self) with dictionary \(document.data())")
                 }
             }
-            print(1)
             self.quotes = models
             self.documents = snapshot.documents
             

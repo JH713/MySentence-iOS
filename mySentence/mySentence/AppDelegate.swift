@@ -18,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        // 파이어베이스 에뮬레이터
 //        Auth.auth().useEmulator(withHost: "localhost", port: 9099)
+        // 폰트 이름 찾기
+//        for family in UIFont.familyNames {
+//            print(family)
+//            for names in UIFont.fontNames(forFamilyName: family) {
+//                print("==\(names)")
+//            }
+//        }
         return true
     }
 
