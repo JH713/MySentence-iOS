@@ -20,7 +20,9 @@ class QuotesViewController: UIViewController {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
+//        tableView.register(QuoteCell.self, forCellReuseIdentifier: QuoteCell.identifier)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
         return tableView
     }()
     
@@ -150,9 +152,15 @@ extension QuotesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: QuoteCell.identifier, for: indexPath) as? QuoteCell else {
+//            fatalError()
+//        }
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let quote = quotes[indexPath.row]
         cell.textLabel?.text = quote.quote
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.textLabel?.font = UIFont(name: "YESMyoungjo-Regular", size: 16)
         return cell
     }
     

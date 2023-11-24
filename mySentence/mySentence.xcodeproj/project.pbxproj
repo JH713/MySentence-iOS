@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A64FD07E2B0D2240003977A5 /* YES24MyoungjoR.otf in Resources */ = {isa = PBXBuildFile; fileRef = A64FD07C2B0D215C003977A5 /* YES24MyoungjoR.otf */; };
 		A64FD07F2B0D2242003977A5 /* YES24MyoungjoB.otf in Resources */ = {isa = PBXBuildFile; fileRef = A64FD07B2B0D215C003977A5 /* YES24MyoungjoB.otf */; };
+		A64FD0832B0FA0D1003977A5 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64FD0822B0FA0D1003977A5 /* QuoteCell.swift */; };
 		A66E4A9E2B07C6240042B486 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4A9D2B07C6240042B486 /* UserManager.swift */; };
 		A66E4ADC2B086CBA0042B486 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A66E4ADB2B086CBA0042B486 /* FirebaseAuth */; };
 		A66E4AE02B087B390042B486 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66E4ADF2B087B390042B486 /* MainTabBarController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		A64FD07B2B0D215C003977A5 /* YES24MyoungjoB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = YES24MyoungjoB.otf; sourceTree = "<group>"; };
 		A64FD07C2B0D215C003977A5 /* YES24MyoungjoR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = YES24MyoungjoR.otf; sourceTree = "<group>"; };
+		A64FD0822B0FA0D1003977A5 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		A66E4A9D2B07C6240042B486 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A66E4ADF2B087B390042B486 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A66E4AE12B087C710042B486 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		A64FD0802B0FA0A4003977A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A64FD0822B0FA0D1003977A5 /* QuoteCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A66E4AA12B07D4A30042B486 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		A6D93A6E2B06694700FF0536 /* mySentence */ = {
 			isa = PBXGroup;
 			children = (
+				A64FD0802B0FA0A4003977A5 /* View */,
 				A64FD07D2B0D2163003977A5 /* Font */,
 				A66E4AA12B07D4A30042B486 /* ViewController */,
 				A6D93AB52B07C5B600FF0536 /* Service */,
@@ -236,6 +247,7 @@
 				A6D93AB42B07C37300FF0536 /* RootViewController.swift in Sources */,
 				A66E4AE02B087B390042B486 /* MainTabBarController.swift in Sources */,
 				A6D93AB22B07C15200FF0536 /* User.swift in Sources */,
+				A64FD0832B0FA0D1003977A5 /* QuoteCell.swift in Sources */,
 				A6D93A742B06694700FF0536 /* LoginViewController.swift in Sources */,
 				A6D93A702B06694700FF0536 /* AppDelegate.swift in Sources */,
 				A66E4AE22B087C710042B486 /* QuotesViewController.swift in Sources */,
